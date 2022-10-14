@@ -1,0 +1,5 @@
+C:\Users\Frost\Source\Repos\FinalTrivia\Final\obj\Debug\net6.0\Final.csproj.AssemblyReference.cache
+C:\Users\Frost\Source\Repos\FinalTrivia\Final\obj\Debug\net6.0\Final.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Frost\Source\Repos\FinalTrivia\Final\obj\Debug\net6.0\Final.AssemblyInfoInputs.cache
+C:\Users\Frost\Source\Repos\FinalTrivia\Final\obj\Debug\net6.0\Final.AssemblyInfo.cs
+C:\Users\Frost\Source\Repos\FinalTrivia\Final\obj\Debug\net6.0\Final.csproj.CoreCompileInputs.cache
