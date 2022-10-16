@@ -1,23 +1,26 @@
 ﻿
 using System;
-public class game
-{ public string player;
-    public static void Main(String[] args);
+public class game { };
+    str = Console.ReadLine();
+str = Console.WriteLine();
+ public string player;
+     static void Main(String[] args);
     var aGame = new Game(Console.Out);
-    List<int> gamequestionNumbers = new List<int>(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+    List<int> gamequestionNumbers = new List<int>(1, 2, 3, 4);
+{ 
    
 
      aGame.Add("player1");
     aGame.Add("player2");
-    aGame.Add("player3");
+    
 
-var random = new Random();
 
     Run(aGame, random);
 
 Console.WriteLine("Welcome to Triviabate");
 
 Console.WriteLine("How old are you?");
+        Console.Readline()
 if (player <= 17)
     Console.WriteLine("You are not authorized to play this game.You must be 18 or older.");
 else if player => 18
