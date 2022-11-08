@@ -14,7 +14,75 @@ public class Game
     public class Program
 { 
     public static void Main(String[] args)
+
+        var c1 = new Card
+
     { 
+            Id = 1,
+            Category = ""
+            Question = ""
+            Answer = ""
+            Choices =
+            {
+
+
+            }
+
+            var c2 = new Card
+
+    { 
+            Id = 2,
+            Category = ""
+            Question = ""
+            Answer = ""
+            Choices =
+            {
+
+
+            }
+
+                var c3 = new Card
+
+    { 
+            Id = 3,
+            Category = ""
+            Question = ""
+            Answer = ""
+            Choices =
+            {
+
+
+            }
+
+                    var c4 = new Card
+
+    { 
+            Id = 4,
+            Category = ""
+            Question = ""
+            Answer = ""
+            Choices =
+            {
+
+
+            }
+
+                        var c5 = new Card
+
+    { 
+            Id = 5,
+            Category = ""
+            Question = ""
+            Answer = ""
+            Choices =
+            {
+
+
+            }
+
+
+
+
     var aGame = new Game();
 
     Console.WriteLine("Welcome to Triviabate");
