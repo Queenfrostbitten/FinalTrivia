@@ -6,15 +6,48 @@ namespace FinalTrivia
 
 public class Game
 {
-    public String Player1 { get; set;}
-        public String Player2 { get; set; }
+    public String Player1 { get; set; }
+
+    public String Player2 { get; set; }
 
 }
-    public class program
+    public class Program
 { 
-    public static void Main (String[] args)
-}
-    
+    public static void Main(String[] args)
+    { 
+    var aGame = new Game();
+
+    Console.WriteLine("Welcome to Triviabate");
+
+
+    Console.Write("Player 1 name");
+    aGame.player1 = Console.ReadLine() ?? "Player 1";
+        Console.Write("Player 1 age: ");
+        aGame.Player1.Age = int.Parse(Console.ReadLine() ?? "18");
+
+        if (aGame.Player =< 17)
+    Console.WriteLine("You are not authorized to play this game.You must be 18 or older."); )
+        else if player => 18
+            Console.WriteLine("You're 18 or older let's get the party started!");
+    else(player null)
+    Console.WriteLine("No response was recieved please start over.");
+
+
+
+
+    Console.Write("Player 2");
+    aGame.player1 = Console.ReadLine() ?? "Player 1";
+
+
+
+
+
+
+
+
+
+
+
 str = Console.ReadLine();
 str = Console.WriteLine();
  public string player;
@@ -24,23 +57,17 @@ str = Console.WriteLine();
 { 
    
 
-     aGame.Add("player1");
-    aGame.Add("player2");
     
 
 
     Run(aGame, random);
 
-Console.WriteLine("Welcome to Triviabate");
+
 
 Console.WriteLine("How old are you?");
         Console.Readline()
-if (player <= 17)
-    Console.WriteLine("You are not authorized to play this game.You must be 18 or older.");
-else if player => 18
-            Console.WriteLine("You're 18 or older let's get the party started!");
-    else(player null)
-    Console.WriteLine("No response was recieved please start over.");
+
+
 
 Console.WriteLine("Choose a username! What would you like your username to be?");
      
