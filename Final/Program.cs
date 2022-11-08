@@ -12,6 +12,7 @@ public class Game
 }
     public class program
 { 
+    public static void Main (String[] args)
 }
     
 str = Console.ReadLine();
