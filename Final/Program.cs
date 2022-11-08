@@ -1,7 +1,20 @@
 ﻿
 using System;
-public class game { };
-    str = Console.ReadLine();
+
+
+namespace FinalTrivia 
+
+public class Game
+{
+    public String Player1 { get; set;}
+        public String Player2 { get; set; }
+
+}
+    public class program
+{ 
+}
+    
+str = Console.ReadLine();
 str = Console.WriteLine();
  public string player;
      static void Main(String[] args);
