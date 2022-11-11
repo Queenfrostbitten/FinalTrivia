@@ -2,7 +2,8 @@
 using System;
 
 
-namespace FinalTrivia 
+//namespace FinalTrivia
+{ 
 
 public class Game
 {
@@ -13,7 +14,7 @@ public class Game
 }
     public class Program
 { 
-    public static void Main(String[] args)
+    public static void Main(String[] args);
 
         var c1 = new Card
 
@@ -32,12 +33,12 @@ public class Game
 
     { 
             Id = 2,
-            Category = ""
-            Question = ""
-            Answer = ""
+            Category = "sex and law"
+            Question = "What is sexual assualt?"
+            Answer = "Any type of sexual contact without consent"
             Choices =
             {
-
+               "Touching someone on their genitals, Forcfully grabbing someone by their genitals, Any type of sexual contact without consent, hitting someone anywhere"
 
             }
 
@@ -84,21 +85,21 @@ public class Game
 
 
     var aGame = new Game();
+        }
+    //Console.WriteLine("Welcome to Triviabate");
 
-    Console.WriteLine("Welcome to Triviabate");
 
+   // Console.Write("Player 1 name");
+   // aGame.player1 = Console.ReadLine() ?? "Player 1";
+       // Console.Write("Player 1 age: ");
+       // aGame.Player1.Age = int.Parse(Console.ReadLine() ?? "18");
 
-    Console.Write("Player 1 name");
-    aGame.player1 = Console.ReadLine() ?? "Player 1";
-        Console.Write("Player 1 age: ");
-        aGame.Player1.Age = int.Parse(Console.ReadLine() ?? "18");
-
-        if (aGame.Player =< 17)
-    Console.WriteLine("You are not authorized to play this game.You must be 18 or older."); )
-        else if player => 18
-            Console.WriteLine("You're 18 or older let's get the party started!");
-    else(player null)
-    Console.WriteLine("No response was recieved please start over.");
+      //  if (aGame.Player =< 17)
+   // Console.WriteLine("You are not authorized to play this game.You must be 18 or older."); )
+       // else if player => 18
+          //  Console.WriteLine("You're 18 or older let's get the party started!");
+    //else(player null)
+    //Console.WriteLine("No response was recieved please start over.");
 
 
 
