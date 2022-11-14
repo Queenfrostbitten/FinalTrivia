@@ -20,66 +20,76 @@ public class Game
 
     { 
             Id = 1,
-            Category = ""
-            Question = ""
-            Answer = ""
+            Category = " Sexual Health "
+            Question = "What is the most common STD/STI in the USA?"
+            Answer = "Human papillomavirus (HPV)"
             Choices =
-            {
-
-
+            { 
+                "Human papillomavirus (HPV),          
+                Chlamydia,
+                Gonorrhea,
+                Syphilis "
             }
 
             var c2 = new Card
 
     { 
             Id = 2,
-            Category = "sex and law"
+            Category = " Laws and Sex "
             Question = "What is sexual assualt?"
             Answer = "Any type of sexual contact without consent"
             Choices =
             {
-               "Touching someone on their genitals, Forcfully grabbing someone by their genitals, Any type of sexual contact without consent, hitting someone anywhere"
-
-            }
+               "Touching someone on their genitals, 
+                Forcfully grabbing someone by their genitals, 
+                Any type of sexual contact without consent,
+                hitting someone "
+                }
 
                 var c3 = new Card
 
     { 
             Id = 3,
-            Category = ""
-            Question = ""
-            Answer = ""
+            Category = " Studies and statistics "
+            Question = "What’s the Average Person’s Number of Sexual Partners?"
+            Answer = " 7 "
             Choices =
             {
-
-
-            }
+                " 2,
+                  15, 
+                  44,
+                  7 " 
+                    }
 
                     var c4 = new Card
 
     { 
             Id = 4,
-            Category = ""
-            Question = ""
-            Answer = ""
+            Category = " Studies and statistics "
+            Question = " What percentage of women always reach a climax during sex? "
+            Answer = " 29%"
             Choices =
             {
-
-
-            }
+                   " 40%, 
+                     10%, 
+                     65%, 
+                     29% "
+                        }
 
                         var c5 = new Card
 
     { 
             Id = 5,
-            Category = ""
-            Question = ""
-            Answer = ""
+            Category = " Sexual Health "
+            Question = " Sexually transmitted bacterial infections (STIs) can be treated with what? "
+            Answer = " Antibiotics "
             Choices =
             {
-
-
-            }
+                        " Antibiotics, 
+                          Steroids,
+                           Antacids, 
+                           antipsychotics "
+                            }
 
 
 
