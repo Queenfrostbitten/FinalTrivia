@@ -18,6 +18,12 @@ public class Game
 
         var c1 = new Card
 
+        public int ID { get; set; }
+        public string Category { get; set; }
+        public string Question { get; set; }
+        public string Answer { get; set; }
+        public List <string> Choices { get; set; }
+
     { 
             Id = 1,
             Category = " Sexual Health "
@@ -95,7 +101,7 @@ public class Game
 
 
     var aGame = new Game();
-        }
+{ }
     //Console.WriteLine("Welcome to Triviabate");
 
 
@@ -114,8 +120,8 @@ public class Game
 
 
 
-    Console.Write("Player 2");
-    aGame.player1 = Console.ReadLine() ?? "Player 1";
+    //Console.Write("Player 2");
+   // aGame.player1 = Console.ReadLine() ?? "Player 1";
 
 
 
@@ -127,28 +133,28 @@ public class Game
 
 
 
-str = Console.ReadLine();
-str = Console.WriteLine();
- public string player;
-     static void Main(String[] args);
-    var aGame = new Game(Console.Out);
-    List<int> gamequestionNumbers = new List<int>(1, 2, 3, 4);
+//str = Console.ReadLine();
+//str = Console.WriteLine();
+ //public string player;
+    // static void Main(String[] args);
+    //var aGame = new Game(Console.Out);
+    //List<int> gamequestionNumbers = new List<int>(1, 2, 3, 4);
 { 
    
 
     
 
 
-    Run(aGame, random);
+    //Run(aGame, random);
 
 
 
-Console.WriteLine("How old are you?");
-        Console.Readline()
+//Console.WriteLine("How old are you?");
+        //Console.Readline()
 
 
 
-Console.WriteLine("Choose a username! What would you like your username to be?");
+//Console.WriteLine("Choose a username! What would you like your username to be?");
      
 {
     
