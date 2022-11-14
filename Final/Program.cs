@@ -3,7 +3,7 @@ using System;
 
 
 //namespace FinalTrivia
-{ 
+
 
 public class Game
 {
@@ -25,7 +25,7 @@ public class Game
         public List <string> Choices { get; set; }
 
     { 
-            Id = 1,
+            ID = 1,
             Category = " Sexual Health "
             Question = "What is the most common STD/STI in the USA?"
             Answer = "Human papillomavirus (HPV)"
@@ -40,7 +40,7 @@ public class Game
             var c2 = new Card
 
     { 
-            Id = 2,
+            ID = 2,
             Category = " Laws and Sex "
             Question = "What is sexual assualt?"
             Answer = "Any type of sexual contact without consent"
@@ -55,7 +55,7 @@ public class Game
                 var c3 = new Card
 
     { 
-            Id = 3,
+            ID = 3,
             Category = " Studies and statistics "
             Question = "What’s the Average Person’s Number of Sexual Partners?"
             Answer = " 7 "
@@ -70,7 +70,7 @@ public class Game
                     var c4 = new Card
 
     { 
-            Id = 4,
+            ID = 4,
             Category = " Studies and statistics "
             Question = " What percentage of women always reach a climax during sex? "
             Answer = " 29%"
@@ -85,7 +85,7 @@ public class Game
                         var c5 = new Card
 
     { 
-            Id = 5,
+            ID = 5,
             Category = " Sexual Health "
             Question = " Sexually transmitted bacterial infections (STIs) can be treated with what? "
             Answer = " Antibiotics "
