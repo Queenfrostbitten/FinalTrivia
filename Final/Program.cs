@@ -1,8 +1,9 @@
 ﻿
 using System;
+using System.Collections.Generic;
 
 
-//namespace FinalTrivia
+namespace FinalTrivia;
 
 
 public class Game
@@ -11,24 +12,61 @@ public class Game
 
     public String Player2 { get; set; }
 
-}
-    public class Program
-{ 
-    public static void Main(String[] args);
+        public static void Main(String[] args);
 
-        var c1 = new Card
+     
+      Console.WriteLine("Enter Player Name:");
 
-        public int ID { get; set; }
-        public string Category { get; set; }
-        public string Question { get; set; }
-        public string Answer { get; set; }
-        public List <string> Choices { get; set; }
+      // Not currently being used, need to utilize this for random numbers?
+      List<int> gamequestionNumbers = new List<int> { 1, 2, 3, 4 };
 
-    { 
+      Console.WriteLine("Welcome to Triviabate");
+
+      Console.WriteLine("How old are you?");
+
+      // add check to make sure console.ReadLine is working right
+      var age = int.Parse(Console.ReadLine());
+
+      if (age <= 17)
+      {
+        Console.WriteLine("You are not authorized to play this game.You must be 18 or older.");
+        // return to exit program
+        return;
+      }
+      else if (age >= 18)
+      {
+        Console.WriteLine("You're 18 or older let's get the party started!");
+      }
+      else
+      {
+        Console.WriteLine("No response was recieved please start over.");
+        // return to exit program
+        return;
+      }
+
+      Console.WriteLine("Choose a username! What would you like your username to be?");
+      var str = Console.ReadLine();
+    
+      var aGame = new Game() { Player = str };
+
+public class Program
+ 
+  
+    var c1 = new Card;
+
+    
+    public int ID { get; set; }
+    public string Category { get; set; }
+    public string Question { get; set; }
+public string Answer { get; set; }
+public List<string> Choices { get; set; }
+
+
+
             ID = 1,
-            Category = " Sexual Health "
-            Question = "What is the most common STD/STI in the USA?"
-            Answer = "Human papillomavirus (HPV)"
+            Category = " Sexual Health ";
+Question = "What is the most common STD/STI in the USA?";
+Answer = "Human papillomavirus (HPV)";
             Choices =
             { 
                 "Human papillomavirus (HPV),          
@@ -37,7 +75,7 @@ public class Game
                 Syphilis "
             }
 
-            var c2 = new Card
+var c2 = new Card
 
     { 
             ID = 2,
@@ -52,21 +90,21 @@ public class Game
                 hitting someone "
                 }
 
-                var c3 = new Card
+    var c3 = new Card
 
-    { 
-            ID = 3,
-            Category = " Studies and statistics "
+    {
+        ID = 3,
+        Category = " Studies and statistics "
             Question = "What’s the Average Person’s Number of Sexual Partners?"
             Answer = " 7 "
             Choices =
-            {
-                " 2,
-                  15, 
-                  44,
-                  7 " 
-                    }
+        {
+            " 2,
+                  15,
+            44,
+            7 " 
 
+        }
                     var c4 = new Card
 
     { 
@@ -100,8 +138,8 @@ public class Game
 
 
 
-    var aGame = new Game();
-{ }
+   // var aGame = new Game()
+
     //Console.WriteLine("Welcome to Triviabate");
 
 
@@ -139,7 +177,7 @@ public class Game
     // static void Main(String[] args);
     //var aGame = new Game(Console.Out);
     //List<int> gamequestionNumbers = new List<int>(1, 2, 3, 4);
-{ 
+
    
 
     
@@ -156,9 +194,9 @@ public class Game
 
 //Console.WriteLine("Choose a username! What would you like your username to be?");
      
-{
+
     
    
-}
 
-}
+
+
