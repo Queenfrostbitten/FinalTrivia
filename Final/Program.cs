@@ -1,4 +1,4 @@
-﻿
+﻿using System;
 namespace Final;
 
 public class Program
