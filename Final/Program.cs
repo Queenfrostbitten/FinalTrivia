@@ -4,9 +4,21 @@ namespace Final;
 public class Program
 {
     public static void Main(String[] args)
+    { }
+    public class MultiplechoiceQuestion
+
     {
+        var deck = new List<Card>();
+        public string? Question { get; set; }
+        public List<string>? Choices { get; set; }
+        public int CorrectAnswer { get; set; }
+        public void MultipleChoiceQuestion() { }
+       
         #region  Card Creating 
-        var c1 = new Card
+          var c1 = new Card
+          
+
+
         {
             ID = 1,
             Category = " Sexual Health ",
@@ -134,9 +146,9 @@ public class Program
     public class Game
     {
         //can be something like public List<String> Players = new List<String>();
-        public String? Player1 { get; set; }
+        public String ?Player1 { get; set; }
 
-        public String? Player2 { get; set; }
+        public String ?Player2 { get; set; }
     }
 }
 
@@ -165,3 +177,38 @@ public class Program
 
 //Console.Write("Player 2");
 // aGame.player1 = Console.ReadLine() ?? "Player 1";
+
+
+
+
+
+
+
+
+
+
+
+//str = Console.ReadLine();
+//str = Console.WriteLine();
+//public string player;
+// static void Main(String[] args);
+//var aGame = new Game(Console.Out);
+//List<int> gamequestionNumbers = new List<int>(1, 2, 3, 4);
+
+
+
+
+
+
+//Run(aGame, random);
+
+
+
+//Console.WriteLine("How old are you?");
+//Console.Readline()
+
+
+
+//Console.WriteLine("Choose a username! What would you like your username to be?");
+
+
