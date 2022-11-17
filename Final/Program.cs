@@ -31,12 +31,16 @@ public class Deck
             return card;
         }
 
-        private static Card PickRandomCard()
-        {
+    private Card PickRandomCard()
+    {
+        Cards.Count()
+            Random().Next(< int.5 >)
+            }
+                     }
+  
 
         RandomCard(c1.Cards.Where);
 
-        }
 
     }
     public class Program
@@ -44,7 +48,7 @@ public class Deck
         public static void Main(string[] args)
         {
 
-        while (Deck.Cards.Cound>0)
+        while (Deck.Cards.Count>0)
         { Console.ReadLine(Choices); }
 
 
@@ -180,20 +184,22 @@ public class Deck
        
            
          
-         while (Deck.Cards.Count>0);
+         while(Deck.Cards.Count>0);
 
 {
-         Console.ReadLine();
-                Deck.Draw()
+         Console.WriteLine("loop here");
+                Deck.Draw() {}
         
             Deck.Cards.Add(c1);
             Deck.Cards.Add(c2);
             Deck.Cards.Add(c3);
             Deck.Cards.Add(c4);
-            Deck.Cards.Add(c5); 
-        
-        
-    
+            Deck.Cards.Add(c5);
+
+    Console.WriteLine("Do you wish to continue? Y or N")
+        var char = Console.ReadLine();
+
+
 
 }
 
