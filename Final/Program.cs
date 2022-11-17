@@ -1,148 +1,200 @@
-﻿using System;
+﻿using System.Collections.Generic;
+
 namespace Final;
 
-public class Program
+   public class Card
 {
-    public static void Main(String[] args)
-    { 
-        var deck = new List<Card>();
-     
-        #region  Card Creating 
-          var c1 = new Card
-          
+   
+        public int ID { get; set; }
+    public string ?Category { get; set; }
+    public string ?Question { get; set; }
+    public string ?Answer { get; set; }
+    public List<string> ?Choices { get; set; }
+    
+}
+public class Deck
+
+{
+    public Deck()
+    {
+        Cards = new List<Card>();
+
+    }
+
+    public List<Card> Cards { get; set; }
+    public Card Draw() 
+        
 
 
+        { var card = PickRandomCard();
+            RemoveCard(card);
+            return card;
+        }
+
+        private static Card PickRandomCard()
         {
-            ID = 1,
-            Category = " Sexual Health ",
-            Question = "What is the most common STD/STI in the USA?",
-            Answer = "Human papillomavirus (HPV)",
-            Choices = new List<string>()
+
+        RandomCard(c1.Cards.Where);
+
+        }
+
+    }
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+
+        while (Deck.Cards.Cound>0)
+        { Console.ReadLine(Choices); }
+
+
+        int[] deck = {c1, c2, c3 c4, c5};
+        var deck = new Deck();
+            var c1 = new Card
+            {
+
+                ID = 1,
+                Category = " Sexual Health ",
+                Question = "What is the most common STD/STI in the USA?",
+                Answer = "Human papillomavirus (HPV)",
+                Choices = new List<string>()
                 {
                     "Human papillomavirus (HPV)",
                     "Chlamydia",
                     "Gonorrhea",
                     "Syphilis"
                 }
-        };
-        var c2 = new Card
-        {
-            ID = 2,
-            Category = "Law and Sex",
-            Question = "What is sexual assault?",
-            Answer = "Any type of sexual contact without consent",
-            Choices = new List<string>()
+            };
+            var c2 = new Card
+            {
+                ID = 2,
+                Category = "Law and Sex",
+                Question = "What is sexual assault?",
+                Answer = "Any type of sexual contact without consent",
+                Choices = new List<string>()
                 {
                     "Touching someone on their genitals",
                     "Forcefully grabbing someone by their genitals",
                     "Any type of sexual contact without consent",
                     "hitting someone"
                 }
-        };
+            };
 
-        var c3 = new Card
-        {
-            ID = 3,
-            Category = "Studies and statistics",
-            Question = "What’s the Average Person’s Number of Sexual Partners?",
-            Answer = "7",
-            Choices = new List<string>()
+            var c3 = new Card
+            {
+                ID = 3,
+                Category = "Studies and statistics",
+                Question = "What’s the Average Person’s Number of Sexual Partners?",
+                Answer = "7",
+                Choices = new List<string>()
                 {
                     "2",
                     "15",
                     "44",
                     "7"
                 }
-        };
-        var c4 = new Card
-        {
-            ID = 4,
-            Category = "Studies and statistics",
-            Question = "What percentage of women always reach a climax during sex?",
-            Answer = "29%",
-            Choices = new List<string>()
+            };
+            var c4 = new Card
+            {
+                ID = 4,
+                Category = "Studies and statistics",
+                Question = "What percentage of women always reach a climax during sex?",
+                Answer = "29%",
+                Choices = new List<string>()
                 {
                     "40%",
                     "10%",
                     "65%",
                     "29%"
                 }
-        };
-        var c5 = new Card
-        {
-            ID = 5,
-            Category = "Sexual Health",
-            Question = "Sexually transmitted bacterial infections (STIs) can be treated with what?",
-            Answer = " Antibiotics ",
-            Choices = new List<string>()
+            };
+            var c5 = new Card
+            {
+                ID = 5,
+                Category = "Sexual Health",
+                Question = "Sexually transmitted bacterial infections (STIs) can be treated with what?",
+                Answer = " Antibiotics ",
+                Choices = new List<string>()
                 {
                     "Antibiotics",
                     "Steroids",
                     "Antacids",
                     "antipsychotics"
                 }
-        };
-        #endregion
+            };
 
 
-        // Not currently being used, need to utilize this for random numbers?
-        List<int> gamequestionNumbers = new List<int> { 1, 2, 3, 4 };
 
-        Console.WriteLine("Welcome to Triviabate");
+            
+            Console.WriteLine("Welcome to Triviabate");
 
-        var _canPlay = GetAgeInputWithMinorCheck();
-        if (!_canPlay) return;
+            var _canPlay = GetAgeInputWithMinorCheck();
+            if (!_canPlay) return;
 
-        Console.WriteLine("You're 18 or older let's get the party started!");
+            Console.WriteLine("You're 18 or older let's get the party started!");
 
-        Console.WriteLine("Choose a username! What would you like your username to be?");
-        var _pUsername = Console.ReadLine();
 
-        var aGame = new Game() { Player1 = _pUsername };
-    }
-    //update body
-    /// <summary>
-    /// Get age input from the user and checks if the player is minor
-    /// </summary>
-    /// <returns>
-    /// Boolean value True if the person is Adult, false if the player is a minor or input value wasn't an Integer
-    /// </returns>>
-    public static bool GetAgeInputWithMinorCheck()
-    {
-        Console.WriteLine("How old are you?");
-        //this way we can handle the parsing result
-        if (int.TryParse(Console.ReadLine(), out var _insertedAge))
+        }
+
+        public static bool GetAgeInputWithMinorCheck()
         {
-            //player is an Adult
-            if (IsAdult(_insertedAge)) return true;
-            //player is a minor
-            Console.WriteLine("You are not authorized to play this game.You must be 18 or older.");
+            Console.WriteLine("How old are you?");
+            //this way we can handle the parsing result
+            if (int.TryParse(Console.ReadLine(), out var _insertedAge))
+            {
+                //player is an Adult
+                if (IsAdult(_insertedAge)) return true;
+                //player is a minor
+                Console.WriteLine("You are not authorized to play this game.You must be 18 or older.");
+                return false;
+            }
+            //input is not vaild
+            Console.WriteLine("Invalid Input Exiting Program...");
             return false;
         }
-        //input is not vaild
-        Console.WriteLine("Invalid Input Exiting Program...");
-        return false;
-    }
+    
+        public static bool IsAdult(int age) => age >= 18;
+    
+        var score = 0;
+        foreach (var _card in cards)
+        {
+        }
+        for (int i = 0; i< 5; i++)
+        {
+            if (cards[i].Question == cards[i + 1].Question)
+            {
+                
+            }
+            Console.WriteLine(cards[i].Question);
+            var ans = Console.ReadLine();
+            if (ans.ToLower() == cards[i].Answer || cards[i].Answer.Contains(ans))
+            {
+                
+                Console.WriteLine("Good job!");
+                continue;
+            }
+             Console.WriteLine("Wrong Answer");
 
-    public static bool IsAdult(int age) => age >= 18;
+    
+        //Main loop
+       
+           
+         
+         while (Deck.Cards.Count>0);
 
-    //this can be a struct if we're not going to have any methods
-    public struct Card
-    {
-        public int ID { get; set; }
-        public string Category { get; set; }
-        public string Question { get; set; }
-        public string Answer { get; set; }
-        public List<string> Choices { get; set; }
-    }
+{
+         Console.ReadLine();
+                Deck.Draw()
+        
+            Deck.Cards.Add(c1);
+            Deck.Cards.Add(c2);
+            Deck.Cards.Add(c3);
+            Deck.Cards.Add(c4);
+            Deck.Cards.Add(c5); 
+        
+        
+    
 
-    public class Game
-    {
-        //can be something like public List<String> Players = new List<String>();
-        public String ?Player1 { get; set; }
-
-        public String ?Player2 { get; set; }
-    }
 }
 
 
