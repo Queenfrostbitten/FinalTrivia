@@ -36,12 +36,12 @@ public class Program
         {
             ID = 2,
             Category = "Law and Sex",
-            Question = "What is sexual assualt?",
+            Question = "What is sexual assault?",
             Answer = "Any type of sexual contact without consent",
             Choices = new List<string>()
                 {
                     "Touching someone on their genitals",
-                    "Forcfully grabbing someone by their genitals",
+                    "Forcefully grabbing someone by their genitals",
                     "Any type of sexual contact without consent",
                     "hitting someone"
                 }
@@ -107,12 +107,12 @@ public class Program
 
         var aGame = new Game() { Player1 = _pUsername };
     }
-
+    //update body
     /// <summary>
     /// Get age input from the user and checks if the player is minor
     /// </summary>
     /// <returns>
-    /// Boolean value True if the person is Adult, false if the player is a minor o input value wasn't an Integer
+    /// Boolean value True if the person is Adult, false if the player is a minor or input value wasn't an Integer
     /// </returns>>
     public static bool GetAgeInputWithMinorCheck()
     {
