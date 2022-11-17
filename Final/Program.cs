@@ -4,16 +4,9 @@ namespace Final;
 public class Program
 {
     public static void Main(String[] args)
-    { }
-    public class MultiplechoiceQuestion
-
-    {
+    { 
         var deck = new List<Card>();
-        public string? Question { get; set; }
-        public List<string>? Choices { get; set; }
-        public int CorrectAnswer { get; set; }
-        public void MultipleChoiceQuestion() { }
-       
+     
         #region  Card Creating 
           var c1 = new Card
           
