@@ -1,59 +1,85 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
-namespace Final;
+//namespace Final; //needed ; not {}
 
-   public class Card
+public class Card
 {
-   
-        public int ID { get; set; }
-    public string ?Category { get; set; }
-    public string ?Question { get; set; }
-    public string ?Answer { get; set; }
-    public List<string> ?Choices { get; set; }
-    
+
+    public int ID { get; set; }
+    public string? Category { get; set; }
+    public string? Question { get; set; }
+    public string? Answer { get; set; }
+    public List<string>? Choices { get; set; }
+
 }
+
 public class Deck
 
 {
     public Deck()
     {
-        Cards = new List<Card>();
+        //  - underscore usually means private 
+        _cards = new List<Card>();
 
     }
 
-    public List<Card> Cards { get; set; }
-    public Card Draw() 
-        
-
-
-        { var card = PickRandomCard();
-            RemoveCard(card);
-            return card;
-        }
+    private List<Card> _cards { get; set; }
+    public Card DrawCard()
+    {
+        var card = PickRandomCard();
+        RemoveCard(card);
+        return card;
+    }
 
     private Card PickRandomCard()
     {
-        Cards.Count()
-            Random().Next(< int.5 >)
-            }
-                     }
-  
+        
 
-        RandomCard(c1.Cards.Where);
+        int randomMax = _cards.Count;
 
+        Random r = new Random();
+        int randomCardIndex = r.Next(0, randomMax);
+
+        return _cards[randomCardIndex];
 
     }
-    public class Program
+
+
+    
+    public void AddCard(Card card)
+    {
+        _cards.Add(card);
+    }
+
+    
+    public void RemoveCard(Card card)
+    {
+        _cards.Remove(card);
+    }
+
+    
+    public bool IsEmpty()
+    {
+        return _cards.Count == 0;
+    }
+
+
+}
+
+public class Program
 {
     public static void Main(string[] args)
     {
 
-        while (Deck.Cards.Count > 0)
-        { Console.ReadLine(Choices); }
+        
 
 
-        int[] deck = { c1, c2, c3 c4, c5 };
+      
+
         var deck = new Deck();
+
+
         var c1 = new Card
         {
 
@@ -128,6 +154,12 @@ public class Deck
         };
 
 
+        
+        deck.AddCard(c1);
+        deck.AddCard(c2);
+        deck.AddCard(c3);
+        deck.AddCard(c4);
+        deck.AddCard(c5);
 
 
         Console.WriteLine("Welcome to Triviabate");
@@ -139,12 +171,61 @@ public class Deck
 
 
 
+        
+        int score = 0;
+        while (!deck.IsEmpty())
+        {
+            // Since deck isnt empty, there will be at least one card left to draw.
+            Card theDrawnCard = deck.DrawCard();
+            if (theDrawnCard == null)
+            {
+                Console.WriteLine("Error: Even though the deck was not empty, a card could not be drawn!");
+                return;
+            }
+
+            if (theDrawnCard.Choices == null)
+            {
+                Console.WriteLine("Error: No choices were on the card!");
+                return;
+            }
+
+            Console.WriteLine(theDrawnCard.Question);
+
+            Console.WriteLine("Choices:");
+            int numChoices = theDrawnCard.Choices.Count;
+            for (int i = 0; i < numChoices; i++)
+            {
+                int choiceNum = i + 1;
+                string choiceText = theDrawnCard.Choices[i];
+                Console.WriteLine(choiceNum + ": " + choiceText);
+            }
+
+            int ans; // 1-4 
+            bool convertedToIntSuccessfully = int.TryParse(Console.ReadLine(), out ans);
+            while (!convertedToIntSuccessfully || !(ans >= 1 && ans <= theDrawnCard.Choices.Count))
+            {
+                Console.WriteLine("That is not a valid choice!");
+                convertedToIntSuccessfully = int.TryParse(Console.ReadLine(), out ans);
+            }
+
+            if (theDrawnCard.Choices[ans - 1] == theDrawnCard.Answer) 
+            {
+                Console.WriteLine("Good job!");
+                score++;
+            }
+            else
+            {
+                Console.WriteLine("Wrong Answer");
+            }
+        }
+
+        Console.WriteLine("You completed all the cards in the deck. Your score is " + score + ".");
     }
 
     public static bool GetAgeInputWithMinorCheck()
     {
         Console.WriteLine("How old are you?");
-        //this way we can handle the parsing result
+        //for parsing result
         if (int.TryParse(Console.ReadLine(), out var _insertedAge))
         {
             //player is an Adult
@@ -153,65 +234,17 @@ public class Deck
             Console.WriteLine("You are not authorized to play this game.You must be 18 or older.");
             return false;
         }
-        //input is not vaild
+        // not vaild
         Console.WriteLine("Invalid Input Exiting Program...");
         return false;
     }
 
+    //bool 
 
-     
-        
-    public static bool IsAdult(int age) => age >= 18;
-    
-        var score = 0;
-        foreach (var _card in cards)
-        {
-        }
-        for (int i = 0; i< 5; i++)
-        {
-            if (cards[i].Question == cards[i + 1].Question)
-            {
-                
-            }
-            Console.WriteLine(cards[i].Question);
-            var ans = Console.ReadLine();
-            if (ans.ToLower() == cards[i].Answer || cards[i].Answer.Contains(ans))
-            {
-                
-                Console.WriteLine("Good job!");
-                continue;
-            }
-             Console.WriteLine("Wrong Answer");
-
-
-//Main loop
-    
-
-      var Deck = new Deck();
-
-  int Counter = 5;
-  while (Deck.Cards.Count > 0)
-
-{
-    Console.WriteLine("Knowledge Test:{5}");
-
-    Deck.Draw();
-
-    Deck.Cards.Add(c1);
-    Deck.Cards.Add(c2);
-    Deck.Cards.Add(c3);
-    Deck.Cards.Add(c4);
-    Deck.Cards.Add(c5);
-
-    Console.WriteLine("Do you wish to continue? Y or N")
-        var char = Console.ReadLine();
-
-    if(char == 'N')
+    public static bool IsAdult(int age)
     {
-        wantstoContinue = false;
-            }
-
-
+        return age >= 18;
+    }
 
 }
 
