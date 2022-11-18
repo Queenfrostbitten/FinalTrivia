@@ -175,7 +175,7 @@ public class Program
         int score = 0;
         while (!deck.IsEmpty())
         {
-            // Since deck isnt empty, there will be at least one card left to draw.
+            // Since deck isnt empty, there will be at least one card left to draw..
             Card theDrawnCard = deck.DrawCard();
             if (theDrawnCard == null)
             {
@@ -200,7 +200,7 @@ public class Program
                 Console.WriteLine(choiceNum + ": " + choiceText);
             }
 
-            int ans; // 1-4 
+            int ans; // 1-4 //while loop
             bool convertedToIntSuccessfully = int.TryParse(Console.ReadLine(), out ans);
             while (!convertedToIntSuccessfully || !(ans >= 1 && ans <= theDrawnCard.Choices.Count))
             {
@@ -262,7 +262,7 @@ public class Program
 // aGame.Player1.Age = int.Parse(Console.ReadLine() ?? "18");
 
 //  if (aGame.Player =< 17)
-// Console.WriteLine("You are not authorized to play this game.You must be 18 or older."); )
+// Console.WriteLine("You are not authorized to play this game.You must be 18 or older."); 
 // else if player => 18
 //  Console.WriteLine("You're 18 or older let's get the party started!");
 //else(player null)
@@ -277,30 +277,16 @@ public class Program
 
 
 
-
-
-
-
-
-
-
 //str = Console.ReadLine();
 //str = Console.WriteLine();
 //public string player;
 // static void Main(String[] args);
-//var aGame = new Game(Console.Out);
-//List<int> gamequestionNumbers = new List<int>(1, 2, 3, 4);
-
-
-
-
+//var aGame = new Game(Console.Out);}
+//List<int> gamequestionNumbers = new List<int>(1, 2, 3, 4);)
 
 
 //Run(aGame, random);
 
-
-
-//Console.WriteLine("How old are you?");
 //Console.Readline()
 
 
