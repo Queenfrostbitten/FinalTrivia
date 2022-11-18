@@ -160,7 +160,7 @@ public class Deck
 
 
      
-        {
+        
     public static bool IsAdult(int age) => age >= 18;
     
         var score = 0;
@@ -189,8 +189,8 @@ public class Deck
 
       var Deck = new Deck();
 
-
-while (Deck.Cards.Count > 0)
+  int Counter = 5;
+  while (Deck.Cards.Count > 0)
 
 {
     Console.WriteLine("Knowledge Test:{5}");
