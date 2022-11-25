@@ -269,7 +269,7 @@ public class Program
 //Console.WriteLine("No response was recieved please start over.");
 
 
-
+//remove players 1 and 2 and just use single player
 
 //Console.Write("Player 2");
 // aGame.player1 = Console.ReadLine() ?? "Player 1";
