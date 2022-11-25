@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-//namespace Final; //needed ; not {}
+//namespace Final; //needed to add ; not {}
 
 public class Card
 {
@@ -276,13 +276,11 @@ public class Program
 
 
 
-
-//str = Console.ReadLine();
 //str = Console.WriteLine();
 //public string player;
 // static void Main(String[] args);
 //var aGame = new Game(Console.Out);}
-//List<int> gamequestionNumbers = new List<int>(1, 2, 3, 4);)
+
 
 
 //Run(aGame, random);
