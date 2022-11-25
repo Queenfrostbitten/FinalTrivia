@@ -239,7 +239,7 @@ public class Program
         return false;
     }
 
-    //bool 
+    //bool here for age
 
     public static bool IsAdult(int age)
     {
