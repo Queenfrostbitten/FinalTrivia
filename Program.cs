@@ -74,7 +74,7 @@ public class Program
 
         
 
-
+           //create deck and draw from deck
       
 
         var deck = new Deck();
